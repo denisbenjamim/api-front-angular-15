@@ -1,0 +1,54 @@
+{
+  "clientes": [
+    {
+      "nome": "Ana Beatriz Silva",
+      "idade": 28,
+      "cidade": "Santos"
+    },
+    {
+      "nome": "Carlos Eduardo Gomes",
+      "idade": 45,
+      "cidade": "São Paulo"
+    },
+    {
+      "nome": "Mariana Souza",
+      "idade": 19,
+      "cidade": "São Vicente"
+    },
+    {
+      "nome": "Ricardo Oliveira",
+      "idade": 34,
+      "cidade": "Guarujá"
+    },
+    {
+      "nome": "Fernanda Lima",
+      "idade": 22,
+      "cidade": "Curitiba"
+    },
+    {
+      "nome": "João Pedro Santos",
+      "idade": 51,
+      "cidade": "Rio de Janeiro"
+    },
+    {
+      "nome": "Camila Rocha",
+      "idade": 30,
+      "cidade": "Belo Horizonte"
+    },
+    {
+      "nome": "Lucas Martins",
+      "idade": 27,
+      "cidade": "Praia Grande"
+    },
+    {
+      "nome": "Beatriz Farias",
+      "idade": 39,
+      "cidade": "Porto Alegre"
+    },
+    {
+      "nome": "Marcos Vinícius",
+      "idade": 16,
+      "cidade": "Cubatão"
+    }
+  ]
+}
