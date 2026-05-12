@@ -10,6 +10,7 @@
    <button type="button" class="btn btn-secondary" *ngIf="!btnCadastro">Cancelar</button>
 </form>
 
+<h1>{{cliente | json}}</h1>
 <table class="table">
    <thead>
      <tr>
@@ -20,8 +21,15 @@
         <th>Selecionar</th>
     </tr>
    </thead>
-   <tbody>
 
+   <tbody>
+    <tr *ngFor="let c of clientes; index as i">
+      <td>{{i+1}}</td>
+      <td>{{c.nome}}</td>
+      <td>{{c.idade}}</td>
+      <td>{{c.cidade}}</td>
+      <td><button class="btn btn-success">Selecionar</button></td>
+    </tr>
    </tbody>
 
 </table>

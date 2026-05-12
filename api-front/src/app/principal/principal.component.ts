@@ -8,6 +8,7 @@ import { ClienteService } from '../servico/cliente.service';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent {
+  cliente = new Cliente();
   btnCadastro:boolean = true;
   clientes:Cliente[] = [];
 
@@ -15,5 +16,9 @@ export class PrincipalComponent {
 
   selecionar():void{
     this.servico.selecionar().subscribe(retorno => this.clientes = retorno)
+  }
+
+  ngOnInit(){
+    this.selecionar()
   }
 }
