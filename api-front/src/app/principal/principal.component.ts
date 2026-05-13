@@ -36,9 +36,7 @@ export class PrincipalComponent {
         const posicao = this.clientes.findIndex(c => c.id === retorno.id);
 
         this.clientes[posicao] = retorno;
-        this.btnCadastro = true;
-        this.tabela = true;
-        this.limparFormulario();
+        this.reset();
         alert('Cliente alterado com sucesso!')
       }
     )
@@ -48,6 +46,28 @@ export class PrincipalComponent {
     this.cliente = this.clientes[posicao];
     this.btnCadastro = false;
     this.tabela = false;
+  }
+
+  remover():void{
+     this.servico.remover(this.cliente.id).subscribe(
+      () => {
+        const posicao = this.clientes.findIndex(c => c.id === this.cliente.id);
+
+        this.clientes.slice(posicao,1)
+        this.reset();
+        alert('Cliente removido com sucesso!')
+      }
+    )
+  }
+
+  cancelar(){
+    this.reset();
+  }
+
+  private reset(){
+    this.btnCadastro = true;
+    this.tabela = true;
+    this.limparFormulario();
   }
 
   private limparFormulario(){
