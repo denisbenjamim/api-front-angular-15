@@ -1,4 +1,9 @@
-api-front-angular-15
+# api-front-angular-15
+
+<p align="center">
+  <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" width="120"/>
+</p>
+
 Este é o projeto api-front-angular-15, uma interface web desenvolvida em Angular 15 com Bootstrap 5. Para fins de desenvolvimento e testes rápidos, o back-end foi abstraído utilizando o JSON Server para simular uma API REST completa a partir de um arquivo local.
 
 🛠️ Tecnologias Utilizadas
