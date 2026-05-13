@@ -10,6 +10,7 @@ import { ClienteService } from '../servico/cliente.service';
 export class PrincipalComponent {
   cliente = new Cliente();
   btnCadastro:boolean = true;
+  tabela:boolean = true;
   clientes:Cliente[] = [];
 
   constructor(private servico:ClienteService){}
@@ -23,8 +24,34 @@ export class PrincipalComponent {
     .subscribe( retorno => {
       this.clientes.push(retorno);
 
+      this.limparFormulario();
+
       alert('Cliente cadastrado com sucesso"')
     });
+  }
+
+  alterar():void{
+    this.servico.alterar(this.cliente).subscribe(
+      retorno => {
+        const posicao = this.clientes.findIndex(c => c.id === retorno.id);
+
+        this.clientes[posicao] = retorno;
+        this.btnCadastro = true;
+        this.tabela = true;
+        this.limparFormulario();
+        alert('Cliente alterado com sucesso!')
+      }
+    )
+  }
+
+  selecionarCliente(posicao:number):void{
+    this.cliente = this.clientes[posicao];
+    this.btnCadastro = false;
+    this.tabela = false;
+  }
+
+  private limparFormulario(){
+    this.cliente = new Cliente();
   }
 
   ngOnInit(){

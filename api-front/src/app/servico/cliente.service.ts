@@ -19,4 +19,8 @@ export class ClienteService {
   cadastrar(obj:Cliente):Observable<Cliente>{
     return this.http.post<Cliente>(this.url, obj);
   }
+
+  alterar(obj:Cliente):Observable<Cliente>{
+    return this.http.put<Cliente>(`${this.url}/${obj.id}`, obj);
+  }
 }
