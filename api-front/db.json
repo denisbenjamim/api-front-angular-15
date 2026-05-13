@@ -1,51 +1,61 @@
 {
   "clientes": [
     {
+      "id": 1,
       "nome": "Ana Beatriz Silva",
       "idade": 28,
       "cidade": "Santos"
     },
     {
+      "id": 2,
       "nome": "Carlos Eduardo Gomes",
       "idade": 45,
       "cidade": "São Paulo"
     },
     {
+      "id": 3,
       "nome": "Mariana Souza",
       "idade": 19,
       "cidade": "São Vicente"
     },
     {
+      "id": 4,
       "nome": "Ricardo Oliveira",
       "idade": 34,
       "cidade": "Guarujá"
     },
     {
+      "id": 5,
       "nome": "Fernanda Lima",
       "idade": 22,
       "cidade": "Curitiba"
     },
     {
+      "id": 6,
       "nome": "João Pedro Santos",
       "idade": 51,
       "cidade": "Rio de Janeiro"
     },
     {
+      "id": 7,
       "nome": "Camila Rocha",
       "idade": 30,
       "cidade": "Belo Horizonte"
     },
     {
+      "id": 8,
       "nome": "Lucas Martins",
       "idade": 27,
       "cidade": "Praia Grande"
     },
     {
+      "id": 9,
       "nome": "Beatriz Farias",
       "idade": 39,
       "cidade": "Porto Alegre"
     },
     {
+      "id": 10,
       "nome": "Marcos Vinícius",
       "idade": 16,
       "cidade": "Cubatão"
