@@ -1,16 +1,15 @@
 <form action="">
     <img src="assets/cliente.png" >
-    <input type="text" placeholder="Nome" class="form-control">
-    <input type="number" placeholder="Idade" class="form-control">
-    <input type="text" placeholder="Cidade" class="form-control">
+    <input type="text" placeholder="Nome" class="form-control" name="nome" [(ngModel)]="cliente.nome">
+    <input type="number" placeholder="Idade" class="form-control" name="idade" [(ngModel)]="cliente.idade">
+    <input type="text" placeholder="Cidade" class="form-control" name="cidade" [(ngModel)]="cliente.cidade">
 
-   <button type="button" class="btn btn-primary" *ngIf="btnCadastro">Cadastrar</button>
+   <button type="button" class="btn btn-primary" *ngIf="btnCadastro" (click)="cadastrar()">Cadastrar</button>
    <button type="button" class="btn btn-warning" *ngIf="!btnCadastro">Alterar</button>
    <button type="button" class="btn btn-danger" *ngIf="!btnCadastro">Remover</button>
    <button type="button" class="btn btn-secondary" *ngIf="!btnCadastro">Cancelar</button>
 </form>
 
-<h1>{{cliente | json}}</h1>
 <table class="table">
    <thead>
      <tr>

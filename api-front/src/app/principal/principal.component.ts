@@ -18,6 +18,15 @@ export class PrincipalComponent {
     this.servico.selecionar().subscribe(retorno => this.clientes = retorno)
   }
 
+  cadastrar(): void{
+    this.servico.cadastrar(this.cliente)
+    .subscribe( retorno => {
+      this.clientes.push(retorno);
+
+      alert('Cliente cadastrado com sucesso"')
+    });
+  }
+
   ngOnInit(){
     this.selecionar()
   }
